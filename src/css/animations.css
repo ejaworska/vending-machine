@@ -1,0 +1,110 @@
+/* COINS */
+
+/* 10 gr */
+.move51 img{
+    animation-name: move10;
+    animation-duration: 0.8s;
+}
+
+@keyframes move10 {
+  from {transform: translate(0px,0px);}
+  to {transform: translate(640px,-10px);}
+}
+
+/* 20 gr */
+.move22 img{
+    animation-name: move20;
+    animation-duration: 0.8s;
+}
+  
+@keyframes move20 {
+  from {transform: translate(0px,0px);}
+  to {transform: translate(560px,-10px);}
+}
+
+/* 50 gr */
+.move94 img{
+    animation-name: move50;
+    animation-duration: 0.8s;
+}
+  
+@keyframes move50 {
+  from {transform: translate(0px,0px);}
+  to {transform: translate(480px,-10px);}
+}
+
+/* 1 zł */
+.move00 img{
+    animation-name: move1;
+    animation-duration: 0.8s;
+}
+
+@keyframes move1 {
+  from {transform: translate(0px,0px);}
+  to {transform: translate(640px,-95px);}
+}
+
+/* 2 zł */
+.move21 img{
+    animation-name: move2;
+    animation-duration: 0.8s;
+}
+  
+@keyframes move2 {
+  from {transform: translate(0px,0px);}
+  to {transform: translate(560px,-95px);}
+}
+
+/* 5 zł */
+.move54 img{
+    animation-name: move5;
+    animation-duration: 0.8s;
+}
+  
+@keyframes move5 {
+  from {transform: translate(0px,0px);}
+  to {transform: translate(480px,-95px);}
+}
+
+/* button */
+.move50 img{
+  animation-name: move0;
+  animation-duration: 0.8s;
+}
+  
+@keyframes move0 {
+  from {transform: translate(0px,0px);}
+  to {transform: translate(560px,-180px);}
+}
+
+
+/* products */
+.bounce img{
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-100px); }
+  100% { transform: translateY(0); }
+}
+
+
+/* replace coins */
+.rotate img{
+  animation-name: rotate;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  0%   { transform: rotateX(0deg); }
+  25%  { transform: rotateX(45deg); }
+  50% { transform: rotateX(90deg); }
+  75%  { transform: rotateX(45deg); }
+  100%   { transform: rotateX(0deg); }
+}
+
+

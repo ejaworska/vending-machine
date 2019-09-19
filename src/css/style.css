@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.fullscreen {
+    font-weight: 100;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background:#FDEBD3; 
+    padding: 2% 2%; 
+}
+
+
+
+/* LEFT SIDE */
+#left {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+#radioContainer p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+#checkbox {
+    position: relative;
+    margin-top: 10%;
+}
+
+button {
+    position: absolute;
+    right: 0;
+    top:25%;
+    background-color: #17bcb6;
+    border: none;
+    border-radius: 10px;
+    width: 40%;
+    height: 50%;
+    text-align: center;
+    font-size: 1.1em;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #17bcb681;
+}
+
+#flex-coins {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 40%;
+    position: relative;
+} 
+
+.coin {
+    max-width: 30%;
+    padding: 5%;
+}
+
+.coin img {
+    position: relative;
+    transition: 0.5s;
+}
+
+.coin:hover img{
+    cursor: pointer;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */ 
+}
+
+.coinsInfo {
+    visibility: hidden;
+}
+
+
+
+/* CENTER */
+#center {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+/* RIGHT SIDE */
+#right {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#claud {
+    position: relative;
+    top: 5%;
+    right: 40%;
+    text-align: center;
+}
+
+#products {
+    display: flex;
+    position: relative;
+    bottom: 8%;
+    right: 20%;
+}
+
+.product img {
+    transition: 0.5s;
+}
+
+.product:hover img{
+    cursor: pointer;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+} 
+
+#screen {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3em;
+}
+
+
+
+/* TOOLTIP */
+.tooltiptext {
+    visibility: hidden;
+    width: 100%;
+    background-color: #f1dbc6;
+    color:#4e6b67;
+    text-align: center;
+    border-radius: 15px;
+    padding: 15px 15px;
+    z-index: 1;
+    position: absolute;
+}
+
+.product .tooltiptext {
+    bottom: 130%;
+    right:0;
+}
+
+.product:hover .tooltiptext {
+    visibility: visible;
+}
+
+.coin .tooltiptext {
+    bottom: 100%;
+    left: 8%;
+}
+
+.coin:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+
+/* RADIO BUTTON */
+#radioContainer {
+    display: flex;
+    margin-left: 10%;
+}
+.radioButton {
+    display: block;
+    position: relative;
+    padding-left: 15%;
+    margin-bottom: 7%;
+    cursor: pointer;
+    font-size: 1.3em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .radioButton input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+  
+  .radioButton:hover input ~ .checkmark {
+    background-color: #17bcb6;
+  }
+  
+  .radioButton input:checked ~ .checkmark {
+    background-color:#17bcb6;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .radioButton input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .radioButton .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+
+  
+
+
